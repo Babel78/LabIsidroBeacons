@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="org.giot.applabisidrobeacon.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_semana_ciencia"
+                android:layout_width="wrap_content"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:textColor="@color/t_colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="SEMANA DE LA CIENCIA"/>
+
+            <ImageView
+                android:id="@+id/im_peru_ciencia"
+                android:layout_width="150dp"
+                android:layout_below="@id/tv_semana_ciencia"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/peru_con_ciencia"/>
+            <TextView
+                android:id="@+id/tv_fondo"
+                android:layout_below="@+id/im_peru_ciencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:text="Conferencia demostrativa Caminando hacia una implementación de Ciudad Inteligente, Internet de las Cosas y su impacto en la sociedad actual, realizado por el Grupo de Investigación de Internet de las Cosas de la U.N.M.S.M. - Facultad de Ingeniería de Sistemas e Informática."/>
+
+            <LinearLayout
+                android:id="@+id/linear_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_fondo"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/t_colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:text="Tema: "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="Uso de Beacons para monitoreo de satisfacción de clientes en servicios públicos y privados." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_presentado"
+                android:layout_below="@id/linear_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"
+                android:text="Presentado por:"
+                android:textStyle="italic"
+                android:textColor="@color/t_colorPrimaryDark"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/linear_2"
+                android:layout_below="@id/tv_presentado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/logo_giot"
+                    />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:padding="15dp"
+                    android:src="@drawable/unmsm"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_organizado"
+                android:layout_below="@id/linear_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:text="Organizan:"
+                android:textColor="@color/t_colorPrimaryDark"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_below="@id/tv_organizado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/lab_isidro"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/concytec"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

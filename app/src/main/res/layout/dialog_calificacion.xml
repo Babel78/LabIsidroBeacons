@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/t_colorPrimaryDark"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Califica el servicio de Recojo de Basura del Distrito"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/textView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginTop="15dp"
+        android:ems="14"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:hint="Agrega un comentario..."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_below="@id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:theme="@style/raisedButton"
+        android:textSize="15dp"
+        android:text="Enviar"/>
+
+</RelativeLayout>
