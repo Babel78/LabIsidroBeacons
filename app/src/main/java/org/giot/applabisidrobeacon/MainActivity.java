@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         database=FirebaseDatabase.getInstance();
         reference=database.getReference();
 
-
-        EstimoteSDK.initialize(getApplicationContext(),"beacon1-bix","257d621c9f372a11b7a6b8c630e10a31");
+_
+        EstimoteSDK.initialize(getApplicationContext(),"YOUR_NAME_PROJECT","YOUR_KEY_PROJECT");
 
 
         beaconManager = new BeaconManager(getApplicationContext());
