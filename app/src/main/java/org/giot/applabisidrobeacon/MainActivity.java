@@ -58,7 +58,7 @@ _
             @Override
             public void onEddystonesFound(List<Eddystone> eddystones) {
                 for(int i=0;i<eddystones.size();i++){
-                    if(eddystones.get(i).instance.equals("1013cf850dde")){
+                    if(eddystones.get(i).instance.equals("INSTANCE_EDDYSTONE_UID")){
                         ShowAlertDialog();
                     }
                 }
